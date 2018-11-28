@@ -17,7 +17,6 @@ class App extends Component {
 
   fetchDropdownData = () => {
     const options = Constants.DROP_DOWN_DATA;
-
     this.setState({ dropdownData: options, show: true, dropdownValue: options[0] })
   }
 
