@@ -35,6 +35,10 @@ class App extends Component {
         },
         background: "white",
         color: "black"
+      }),
+      container: (provided, state) => ({
+        ...provided,
+        width: "200px",
       })
     }
     return (
@@ -45,7 +49,8 @@ class App extends Component {
           isSearchable={true}
           options={this.state.dropdownData}
           getOptionLabel={option => option.name}
-          isClearable={false}
+          isClearable={true}
+          noOptionsMessage={"No Options To Select!"}
           backspaceRemovesValue={true}
           onChange={this.onChangeDropDownValue}
           inputValue={this.state.dropdownInputTextValue}
