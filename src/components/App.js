@@ -28,7 +28,7 @@ class App extends Component {
 
   render() {
     const customStyles = {
-      option: (provided, state) => ({
+      option: (provided) => ({
         ...provided,
         '&:hover': {
           background: "rgba(0, 0, 255, 0.1)"
@@ -36,7 +36,7 @@ class App extends Component {
         background: "white",
         color: "black"
       }),
-      container: (provided, state) => ({
+      container: (provided) => ({
         ...provided,
         width: "200px",
       })
@@ -50,7 +50,7 @@ class App extends Component {
           options={this.state.dropdownData}
           getOptionLabel={option => option.name}
           isClearable={true}
-          noOptionsMessage={"No Options To Select!"}
+          noOptionsMessage={() => "No Options To Select!"}
           backspaceRemovesValue={true}
           onChange={this.onChangeDropDownValue}
           inputValue={this.state.dropdownInputTextValue}
