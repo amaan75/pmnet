@@ -21,16 +21,15 @@ code {
   width: 180px;
 }
 
-.react-select-container--is-focused{
+/* .react-select-container--is-focused{
   width: 180px;
   outline:2px dotted #333333 !important;
   outline-offset:1px;
-}
+} */
 
 
 /* use this to style the focus thing */
 .react-select-container .react-select__control--is-focused{
-
     outline:2px dotted #333333 !important;
     outline-offset:1px;
     

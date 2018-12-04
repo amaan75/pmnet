@@ -67,9 +67,9 @@ class App extends Component {
           //edit this className prop for focus
           //look at index.css for the style 
           className={
-            this.state.isDDfocused ?
-              "react-select-container--is-focused" :
-              "react-select-container"
+            // this.state.isDDfocused ?
+            //   "react-select-container--is-focused" :
+            "react-select-container"
           }
           classNamePrefix={"react-select"}
           theme={(theme) => {
