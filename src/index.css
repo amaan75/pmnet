@@ -17,44 +17,43 @@ code {
   width: 50%;
   padding: 10% 20%;
 }
-
-
-
-
-
 .react-select-container{
   width: 180px;
-  
 }
 
-/* use this for now, we will remove this and use this once the issue is resolved */
 .react-select-container--is-focused{
-  width:180px; 
+  width: 180px;
   outline:2px dotted #333333 !important;
   outline-offset:1px;
 }
 
 
+/* use this to style the focus thing */
+.react-select-container .react-select__control--is-focused{
 
-.react-select__option:hover{
-background-color: rgb(245,245,255);
+    outline:2px dotted #333333 !important;
+    outline-offset:1px;
+    
 }
-.react-select__option--is-focused{
+  
+ 
+  
+  
+.react-select__option:hover{
   background-color: rgb(245,245,255);
   }
-  .react-select__control{
-    border-color: silver;
-  }
-
-  .react-select__control--is-focused{
-    outline:2px dotted #333333!important;
-    outline-offset:1px;
+  .react-select__option--is-focused{
+    background-color: rgb(245,245,255);
     }
-  .react-select__control:focus{
-    outline:2px dotted !important;
-    outline-offset:1px;
-  }
+    .react-select__control{
+      border-color: silver;
+    }
+  
+   
 
-  .react-select__menu{
-    background: white
-  }
+  
+  
+    .react-select__menu{
+      background: white;
+      border-radius: 0 ;
+    }

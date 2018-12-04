@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Constants from "../utils/Constants"
 import Select from "react-select";
+
 class App extends Component {
 
   state = {
@@ -85,10 +86,10 @@ class App extends Component {
             console.log(JSON.stringify(t, null, 2));
             return t;
           }}
-          //add this for focus styling{onFocus}
-          onFocus={this.toggleFocusState}
-          //add this for focus styling{onBlur}
-          onBlur={this.toggleFocusState}
+          // //add this for focus styling{onFocus}
+          // onFocus={this.toggleFocusState}
+          // //add this for focus styling{onBlur}
+          // onBlur={this.toggleFocusState}
           isSearchable={true}
           options={this.state.dropdownData}
           getOptionLabel={option => option.name}
