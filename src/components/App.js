@@ -43,9 +43,16 @@ class App extends Component {
         background: "white",
         color: "black"
       }),
-      container: (provided) => ({
+      control: (provided, state) => ({
+        ...provided,
+        //use this if you want to do this via props
+        outline: state.isFocused ? "2px dotted #333333" : "",
+      }),
+      container: (provided, state) => ({
         ...provided,
         width: "200px",
+        //use this if you want to do this via props
+        // outline: state.isFocused ? "2px dotted #333333" : "",
       })
     }
     return (
