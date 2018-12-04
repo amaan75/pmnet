@@ -7,6 +7,8 @@ class App extends Component {
     dropdownData: [],
     dropdownValue: {},
     dropdownInputTextValue: "",
+    //use this state  for focusing
+    isDDfocused: false,
     show: false
   }
 
@@ -25,6 +27,11 @@ class App extends Component {
       this.setState({ dropdownValue: option })
   }
 
+  // use this to set focus to variable on the dropdown, and then set custom class for to style the
+  //container
+  toggleFocusState = () => {
+    this.setState({ isDDfocused: !this.state.isDDfocused })
+  }
 
   render() {
     const customStyles = {
@@ -45,7 +52,36 @@ class App extends Component {
       this.state.show &&
       <div className="container">
         <Select
-          styles={customStyles}
+          id="test-id"
+          instanceId="test-instance-id"
+          inputId="test-input-id"
+          // styles={customStyles}
+          //edit this className prop for focus
+          //look at index.css for the style 
+          className={
+            this.state.isDDfocused ?
+              "react-select-container--is-focused" :
+              "react-select-container"
+          }
+          classNamePrefix={"react-select"}
+          theme={(theme) => {
+            console.log(JSON.stringify(theme, null, 2));
+            const t = ({
+
+              ...theme,
+              colors: {
+                // ...theme.colors,
+                // primary: "white"
+              },
+            })
+
+            console.log(JSON.stringify(t, null, 2));
+            return t;
+          }}
+          //add this for focus styling{onFocus}
+          onFocus={this.toggleFocusState}
+          //add this for focus styling{onBlur}
+          onBlur={this.toggleFocusState}
           isSearchable={true}
           options={this.state.dropdownData}
           getOptionLabel={option => option.name}
