@@ -1,49 +1,46 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
-.container{
+.container {
   width: 50%;
   padding: 10% 20%;
 }
-.react-select-container{
+
+.react-select-container {
   width: 180px;
   height: 25px;
   max-height: 25px;
 }
 
-
-.react-select__control{
+.react-select__control {
   min-height: 10px !important;
   height: 25px;
   border-color: silver;
 }
 
-.react-select__value-container{
+.react-select__value-container {
   height: 25px;
   position: unset !important;
 }
-.react-select__indicators{
+
+.react-select__indicators {
   height: 25px;
   max-height: 25px;
-
 }
-.react-select__dropdown-indicator{
+
+.react-select__dropdown-indicator {
   height: 25px;
   max-height: 25px;
   padding: 2px !important;
-  
 }
 
 /* .react-select-container--is-focused{
@@ -52,30 +49,28 @@ code {
   outline-offset:1px;
 } */
 
-
 /* use this to style the focus thing */
-.react-select-container .react-select__control--is-focused{
-    outline:2px dotted #333333 !important;
-    outline-offset:1px;
-    
-}
-  
- 
-  
-  
-.react-select__option:hover{
-  background-color: rgb(245,245,255);
-  }
-  .react-select__option--is-focused{
-    background-color: rgb(245,245,255);
-    }
-   
-  
-   
 
-  
-  
-    .react-select__menu{
-      background: white;
-      border-radius: 0 ;
-    }
+.react-select-container .react-select__control--is-focused {
+  outline: 2px dotted #333333 !important;
+  outline-offset: 1px;
+}
+
+.react-select__option:hover {
+  background-color: rgb(245, 245, 255);
+}
+
+.react-select__option--is-focused {
+  background-color: rgb(245, 245, 255);
+}
+
+.react-select__menu {
+  background: white;
+  border-radius: 0;
+}
+
+/* for overflow hidden */
+
+.react-select__menu-list {
+  overflow-x: hidden;
+}
