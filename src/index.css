@@ -74,3 +74,7 @@ code {
 .react-select__menu-list {
   overflow-x: hidden;
 }
+
+.react-select--is-disabled {
+  color: silver;
+}

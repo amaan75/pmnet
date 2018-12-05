@@ -94,6 +94,7 @@ class App extends Component {
           options={this.state.dropdownData}
           getOptionLabel={option => option.name}
           // isClearable={true}
+          isDisabled={true}
           noOptionsMessage={() => "No Options To Select!"}
           backspaceRemovesValue={true}
           onChange={this.onChangeDropDownValue}
