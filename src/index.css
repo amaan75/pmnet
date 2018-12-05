@@ -19,6 +19,31 @@ code {
 }
 .react-select-container{
   width: 180px;
+  height: 25px;
+  max-height: 25px;
+}
+
+
+.react-select__control{
+  min-height: 10px !important;
+  height: 25px;
+  border-color: silver;
+}
+
+.react-select__value-container{
+  height: 25px;
+  position: unset !important;
+}
+.react-select__indicators{
+  height: 25px;
+  max-height: 25px;
+
+}
+.react-select__dropdown-indicator{
+  height: 25px;
+  max-height: 25px;
+  padding: 2px !important;
+  
 }
 
 /* .react-select-container--is-focused{
@@ -44,9 +69,7 @@ code {
   .react-select__option--is-focused{
     background-color: rgb(245,245,255);
     }
-    .react-select__control{
-      border-color: silver;
-    }
+   
   
    
 

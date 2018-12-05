@@ -93,7 +93,7 @@ class App extends Component {
           isSearchable={true}
           options={this.state.dropdownData}
           getOptionLabel={option => option.name}
-          isClearable={true}
+          // isClearable={true}
           noOptionsMessage={() => "No Options To Select!"}
           backspaceRemovesValue={true}
           onChange={this.onChangeDropDownValue}
