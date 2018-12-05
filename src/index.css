@@ -41,6 +41,7 @@ code {
   height: 25px;
   max-height: 25px;
   padding: 2px !important;
+  color: black;
 }
 
 /* .react-select-container--is-focused{
