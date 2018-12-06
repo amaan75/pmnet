@@ -15,7 +15,7 @@ code {
   padding: 10% 20%;
 }
 
-.react-select-container {
+/* .react-select-container {
   width: 180px;
   height: 25px;
   max-height: 25px;
@@ -42,7 +42,7 @@ code {
   max-height: 25px;
   padding: 2px !important;
   color: black;
-}
+} */
 
 /* .react-select-container--is-focused{
   width: 180px;
@@ -52,7 +52,7 @@ code {
 
 /* use this to style the focus thing */
 
-.react-select-container .react-select__control--is-focused {
+/* .react-select-container .react-select__control--is-focused {
   outline: 2px dotted #333333 !important;
   outline-offset: 1px;
 }
@@ -68,14 +68,14 @@ code {
 .react-select__menu {
   background: white;
   border-radius: 0;
-}
+} */
 
 /* for overflow hidden */
 
-.react-select__menu-list {
+/* .react-select__menu-list {
   overflow-x: hidden;
 }
 
 .react-select--is-disabled {
   color: silver;
-}
+} */

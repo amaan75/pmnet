@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Constants from "../utils/Constants"
 import Select from "react-select";
-
+import 'react-select/dist/react-select.css';
 class App extends Component {
 
   state = {
@@ -23,9 +23,10 @@ class App extends Component {
     this.setState({ dropdownData: options, show: true, dropdownValue: options[0] })
   }
 
-  onChangeDropDownValue = (option, { action }) => {
-    if (action === 'select-option')
-      this.setState({ dropdownValue: option })
+  onChangeDropDownValue = (option, props) => {
+    // const { action } = props;
+    // if (action === 'select-option')
+    this.setState({ dropdownValue: option })
   }
 
   // use this to set focus to variable on the dropdown, and then set custom class for to style the
@@ -35,6 +36,31 @@ class App extends Component {
   }
 
   render() {
+
+    const Option = props => {
+      console.log(props);
+      return (
+        <div
+          ref={props.innerRef}
+          style={props.getStyles("option", props)}
+          {...props.innerProps}
+          aria-label="hey1"
+        />
+      );
+    };
+
+    const SelectContainer = props => {
+      console.log(props);
+      return (
+        <div
+          ref={props.innerRef}
+          style={props.getStyles("container", props)}
+          {...props.innerProps}
+          role="listbox"
+          aria-label="hey1"
+        >{props.children}</div>
+      );
+    };
     const customStyles = {
       option: (provided) => ({
         ...provided,
@@ -63,6 +89,8 @@ class App extends Component {
           id="test-id"
           instanceId="test-instance-id"
           inputId="test-input-id"
+          // menuIsOpen={true}
+          // components={{ SelectContainer, Option }}
           // styles={customStyles}
           //edit this className prop for focus
           //look at index.css for the style 
@@ -72,35 +100,37 @@ class App extends Component {
             "react-select-container"
           }
           classNamePrefix={"react-select"}
-          theme={(theme) => {
-            console.log(JSON.stringify(theme, null, 2));
-            const t = ({
+          // theme={(theme) => {
+          //   console.log(JSON.stringify(theme, null, 2));
+          //   const t = ({
 
-              ...theme,
-              colors: {
-                // ...theme.colors,
-                // primary: "white"
-              },
-            })
+          //     ...theme,
+          //     colors: {
+          //       // ...theme.colors,
+          //       // primary: "white"
+          //     },
+          //   })
 
-            console.log(JSON.stringify(t, null, 2));
-            return t;
-          }}
+          //   console.log(JSON.stringify(t, null, 2));
+          //   return t;
+          // }}
           // //add this for focus styling{onFocus}
           // onFocus={this.toggleFocusState}
           // //add this for focus styling{onBlur}
           // onBlur={this.toggleFocusState}
           isSearchable={true}
           options={this.state.dropdownData}
-          getOptionLabel={option => option.name}
+          // getOptionLabel={option => option.name}
           // isClearable={true}
-          isDisabled={true}
-          noOptionsMessage={() => "No Options To Select!"}
-          backspaceRemovesValue={true}
+          // isDisabled={true}
+          // noOptionsMessage={() => "No Options To Select!"}
+          // backspaceRemovesValue={true}
           onChange={this.onChangeDropDownValue}
-          inputValue={this.state.dropdownInputTextValue}
-          onInputChange={(inputValue, { action }) => this.setState({ dropdownInputTextValue: inputValue })}
+          // inputValue={this.state.dropdownInputTextValue}
+          // onInputChange={(inputValue, { action }) => this.setState({ dropdownInputTextValue: inputValue })}
           value={this.state.dropdownValue}
+          matchPos={"start"}
+          matchProp={"label"}
         // isDisabled={this.props.templateDisabled}
         />
       </div>
