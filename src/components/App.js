@@ -118,7 +118,7 @@ class App extends Component {
           // onFocus={this.toggleFocusState}
           // //add this for focus styling{onBlur}
           // onBlur={this.toggleFocusState}
-          isSearchable={true}
+          searchable={true}
           options={this.state.dropdownData}
           // getOptionLabel={option => option.name}
           // isClearable={true}
@@ -131,7 +131,7 @@ class App extends Component {
           value={this.state.dropdownValue}
           matchPos={"start"}
           matchProp={"label"}
-        // isDisabled={this.props.templateDisabled}
+          disabled={true}
         />
       </div>
 
