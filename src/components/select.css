@@ -46,3 +46,9 @@
     width: 180px;
     font-weight: normal;
 }
+
+/* background color for disable */
+
+.coa-select-container.is-disabled>.Select-control {
+    background-color: #E3E3E3;
+}
