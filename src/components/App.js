@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Constants from "../utils/Constants"
 import Select from "react-select";
 import 'react-select/dist/react-select.css';
+import "./select.css";
 class App extends Component {
 
   state = {

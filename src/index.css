@@ -15,18 +15,6 @@ code {
   padding: 10% 20%;
 }
 
-/* update fo disable */
-
-.coa-select-container.is-disabled>.Select-control>.Select-multi-value-wrapper>.Select-value>.Select-value-label {
-  color: #777777 !important;
-}
-
-/* update for height */
-
-.coa-select-container>.Select-control>.Select-multi-value-wrapper>.Select-input {
-  height: 25px !important;
-}
-
 /* .react-select-container {
   width: 180px;
   height: 25px;
