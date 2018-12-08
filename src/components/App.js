@@ -88,7 +88,7 @@ class App extends Component {
       <div className="container">
         <Select
           id="test-id"
-          instanceId="test-instance-id"
+          instanceId="coa-instance-id"
           inputId="test-input-id"
           // menuIsOpen={true}
           // components={{ SelectContainer, Option }}

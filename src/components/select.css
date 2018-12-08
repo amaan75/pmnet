@@ -6,6 +6,18 @@
 
 /* update for height */
 
+.coa-select-container {
+    height: 25px !important;
+}
+
+/* update for height  */
+
+.coa-select-container>.Select-control {
+    height: 25px !important;
+}
+
+/* update for height */
+
 .coa-select-container>.Select-control>.Select-multi-value-wrapper>.Select-input {
     height: 25px !important;
 }
@@ -13,5 +25,17 @@
 /* update for line height */
 
 .coa-select-container>.Select-value {
+    line-height: 25px !important;
+}
+
+/* update for border radius =0 */
+
+.coa-select-container, .coa-select-container div, .coa-select-container input, .coa-select-container span {
+    border-radius: 0;
+}
+
+/* update for line height*/
+
+#react-select-coa-instance-id--value>.Select-value {
     line-height: 25px !important;
 }
