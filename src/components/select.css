@@ -39,3 +39,10 @@
 #react-select-coa-instance-id--value>.Select-value {
     line-height: 25px !important;
 }
+
+/* update for container width*/
+
+.coa-select-container {
+    width: 180px;
+    font-weight: normal;
+}
