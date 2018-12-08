@@ -64,5 +64,7 @@
 /* disable normal style for focus */
 
 .coa-select-container.is-focused:not(.is-open)>.Select-control {
-    border: none !important;
+    border-color: #777777 !important;
+    box-shadow: none !important;
+    background: #fff;
 }
