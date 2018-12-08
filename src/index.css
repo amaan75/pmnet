@@ -19,6 +19,11 @@ code {
   color: #777777 !important;
 }
 
+.coa-select-container>.Select-control>.Select-multi-value-wrapper>.Select-input {
+  height: 25px !important;
+  color: #777777 !important;
+}
+
 /* .react-select-container {
   width: 180px;
   height: 25px;

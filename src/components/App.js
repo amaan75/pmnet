@@ -97,9 +97,9 @@ class App extends Component {
           className={
             // this.state.isDDfocused ?
             //   "react-select-container--is-focused" :
-            "react-select-container"
+            "coa-select-container"
           }
-          classNamePrefix={"react-select"}
+          classNamePrefix={"coa-select"}
           // theme={(theme) => {
           //   console.log(JSON.stringify(theme, null, 2));
           //   const t = ({
@@ -131,7 +131,10 @@ class App extends Component {
           value={this.state.dropdownValue}
           matchPos={"start"}
           matchProp={"label"}
-          disabled={true}
+          disabled={false}
+          clearable={false}
+          autosize={false}
+
         />
       </div>
 
