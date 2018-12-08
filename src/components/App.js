@@ -89,6 +89,7 @@ class App extends Component {
           id="test-id"
           instanceId="test-instance-id"
           inputId="test-input-id"
+          isOpen={true}
           // menuIsOpen={true}
           // components={{ SelectContainer, Option }}
           // styles={customStyles}
@@ -118,7 +119,7 @@ class App extends Component {
           // onFocus={this.toggleFocusState}
           // //add this for focus styling{onBlur}
           // onBlur={this.toggleFocusState}
-          isSearchable={true}
+          searchable={true}
           options={this.state.dropdownData}
           // getOptionLabel={option => option.name}
           // isClearable={true}
@@ -131,7 +132,8 @@ class App extends Component {
           value={this.state.dropdownValue}
           matchPos={"start"}
           matchProp={"label"}
-        // isDisabled={this.props.templateDisabled}
+          // disabled={this.props.templateDisabled}
+          autosize={false}
         />
       </div>
 
