@@ -15,13 +15,16 @@ code {
   padding: 10% 20%;
 }
 
-.Select.is-disabled>.Select-control>.Select-multi-value-wrapper>.Select-value>.Select-value-label {
+/* update fo disable */
+
+.coa-select-container.is-disabled>.Select-control>.Select-multi-value-wrapper>.Select-value>.Select-value-label {
   color: #777777 !important;
 }
 
+/* update for height */
+
 .coa-select-container>.Select-control>.Select-multi-value-wrapper>.Select-input {
   height: 25px !important;
-  color: #777777 !important;
 }
 
 /* .react-select-container {
