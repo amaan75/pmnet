@@ -12,18 +12,32 @@ class CardPage extends React.Component {
                                 HEADING 1
                             </td>
                             <td>
-                                HEADING 2
+                                HEADING  2
                             </td>
                         </tr>
                     </tbody>
                 </table>
                 <div className="pmnet-card-content">
-                    <button>
-                        cancel
+                    <table>
+                        <tr>
+                            <td colSpan={2} rowSpan={5}>
+                                <div >
+                                    <img src="https://www.unionbankofindia.co.in/Images/Contactless-Debit-Card-Visa.png" className="pmnet-card-image" />
+                                </div>
+                            </td>
+                            <td>
+
+                                <div className="pmnet-content-buttons">
+                                    <button>
+                                        cancel
                     </button>
-                    <button>
-                        next
+                                    <button>
+                                        next
                     </button>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
             </div>
         )
