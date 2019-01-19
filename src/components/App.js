@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import Constants from "../utils/Constants"
 import Select from "react-select";
 import 'react-select/dist/react-select.css';
-import "./select.css";
+import "./select.scss";
+import { InputWithLabel } from './pm_input/Input';
+import CardPage from './CardPage/CardPage';
 class App extends Component {
 
   state = {
@@ -84,64 +86,71 @@ class App extends Component {
       })
     }
     return (
-      this.state.show &&
-      <div className="container">
-        <Select
-          id="test-id"
-          instanceId="coa-instance-id"
-          inputId="test-input-id"
-          // menuIsOpen={true}
-          // components={{ SelectContainer, Option }}
-          // styles={customStyles}
-          //edit this className prop for focus
-          //look at index.css for the style 
-          className={
-            // this.state.isDDfocused ?
-            //   "react-select-container--is-focused" :
-            "coa-select-container"
-          }
-          classNamePrefix={"coa-select"}
-          // theme={(theme) => {
-          //   console.log(JSON.stringify(theme, null, 2));
-          //   const t = ({
+      <React.Fragment>
 
-          //     ...theme,
-          //     colors: {
-          //       // ...theme.colors,
-          //       // primary: "white"
-          //     },
-          //   })
+        {false &&
+          <React.Fragment>
 
-          //   console.log(JSON.stringify(t, null, 2));
-          //   return t;
-          // }}
-          // //add this for focus styling{onFocus}
-          // onFocus={this.toggleFocusState}
-          // //add this for focus styling{onBlur}
-          // onBlur={this.toggleFocusState}
-          searchable={true}
-          options={this.state.dropdownData}
-          // getOptionLabel={option => option.name}
-          // isClearable={true}
-          // isDisabled={true}
-          // noOptionsMessage={() => "No Options To Select!"}
-          // backspaceRemovesValue={true}
-          onChange={this.onChangeDropDownValue}
-          // inputValue={this.state.dropdownInputTextValue}
-          // onInputChange={(inputValue, { action }) => this.setState({ dropdownInputTextValue: inputValue })}
-          value={this.state.dropdownValue}
-          matchPos={"start"}
-          matchProp={"label"}
-          disabled={false}
-          clearable={false}
-          autosize={false}
+            <div className="container">
+              <Select
+                id="test-id"
+                instanceId="coa-instance-id"
+                inputId="test-input-id"
+                // menuIsOpen={true}
+                // components={{ SelectContainer, Option }}
+                // styles={customStyles}
+                //edit this className prop for focus
+                //look at index.css for the style 
+                className={
+                  // this.state.isDDfocused ?
+                  //   "react-select-container--is-focused" :
+                  "coa-select-container"
+                }
+                classNamePrefix={"coa-select"}
+                // theme={(theme) => {
+                //   console.log(JSON.stringify(theme, null, 2));
+                //   const t = ({
 
-        />
+                //     ...theme,
+                //     colors: {
+                //       // ...theme.colors,
+                //       // primary: "white"
+                //     },
+                //   })
 
+                //   console.log(JSON.stringify(t, null, 2));
+                //   return t;
+                // }}
+                // //add this for focus styling{onFocus}
+                // onFocus={this.toggleFocusState}
+                // //add this for focus styling{onBlur}
+                // onBlur={this.toggleFocusState}
+                searchable={true}
+                options={this.state.dropdownData}
+                // getOptionLabel={option => option.name}
+                // isClearable={true}
+                // isDisabled={true}
+                // noOptionsMessage={() => "No Options To Select!"}
+                // backspaceRemovesValue={true}
+                onChange={this.onChangeDropDownValue}
+                // inputValue={this.state.dropdownInputTextValue}
+                // onInputChange={(inputValue, { action }) => this.setState({ dropdownInputTextValue: inputValue })}
+                value={this.state.dropdownValue}
+                matchPos={"start"}
+                matchProp={"label"}
+                disabled={false}
+                clearable={false}
+                autosize={false}
 
+              />
 
-      </div>
-
+              <div className="input1">
+                <InputWithLabel />
+              </div>
+            </div>
+          </React.Fragment>}
+        <CardPage />
+      </React.Fragment>
     )
   }
 }
