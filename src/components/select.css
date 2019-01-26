@@ -1,0 +1,70 @@
+/* update fo disable */
+
+.coa-select-container.is-disabled>.Select-control>.Select-multi-value-wrapper>.Select-value>.Select-value-label {
+    color: #777777 !important;
+}
+
+/* update for height */
+
+.coa-select-container {
+    height: 25px !important;
+}
+
+/* update for height  */
+
+.coa-select-container>.Select-control {
+    height: 25px !important;
+}
+
+/* update for height */
+
+.coa-select-container>.Select-control>.Select-multi-value-wrapper>.Select-input {
+    height: 25px !important;
+}
+
+/* update for line height */
+
+.coa-select-container>.Select-value {
+    line-height: 25px !important;
+}
+
+/* update for border radius =0 */
+
+.coa-select-container, .coa-select-container div, .coa-select-container input, .coa-select-container span {
+    border-radius: 0;
+}
+
+/* update for line height*/
+
+#react-select-coa-instance-id--value>.Select-value {
+    line-height: 25px !important;
+}
+
+/* update for container width*/
+
+.coa-select-container {
+    width: 180px;
+    font-weight: normal;
+}
+
+/* background color for disable */
+
+.coa-select-container.is-disabled>.Select-control {
+    background-color: #E3E3E3;
+}
+
+/* update for focus */
+
+.coa-select-container.is-focused {
+    border: none !important;
+    outline: 2px dotted #333333 !important;
+    outline-offset: 1px;
+}
+
+/* disable normal style for focus */
+
+.coa-select-container.is-focused:not(.is-open)>.Select-control {
+    border-color: #777777 !important;
+    box-shadow: none !important;
+    background: #fff;
+}
