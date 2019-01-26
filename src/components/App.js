@@ -134,6 +134,7 @@ class App extends Component {
           matchProp={"label"}
           // disabled={this.props.templateDisabled}
           autosize={false}
+          disabled={true}
         />
       </div>
 
